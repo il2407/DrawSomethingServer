@@ -14,7 +14,7 @@ console.log("listen to port on", PORT);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://serene-ocean-30628.herokuapp.com",
     methods: ["GET", "POST"],
   },
 });
