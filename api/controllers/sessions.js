@@ -21,7 +21,7 @@ exports.sessions_add_new_session = (req, res, next) => {
           time: result.time,
           request: {
             type: "POST",
-            url: "http://localhost:5001/sessions/",
+            url: "https://serene-meadow-61944.herokuapp.com//sessions/",
           },
         },
       });
@@ -50,7 +50,7 @@ exports.sessions_get_all = (req, res, next) => {
             _id: doc._id,
             request: {
               type: "GET",
-              url: "http://localhost:5001/sessions/",
+              url: "http://https://serene-meadow-61944.herokuapp.com//sessions/",
             },
           };
         }),
@@ -78,7 +78,8 @@ exports.session_edit = (req, res, next) => {
         score: id,
         request: {
           type: "PUT",
-          url: "http://localhost:5001/sessions/" + id,
+          url:
+            "http://https://serene-meadow-61944.herokuapp.com//sessions/" + id,
         },
       });
     })
