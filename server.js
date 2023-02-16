@@ -14,7 +14,7 @@ console.log("listen to port on", PORT);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://serene-ocean-30628.herokuapp.com",
+    origin: "https://drawsomethingclient.onrender.com",
     methods: ["GET", "POST"],
   },
 });
