@@ -21,7 +21,7 @@ exports.sessions_add_new_session = (req, res, next) => {
           time: result.time,
           request: {
             type: "POST",
-            url: "https://serene-meadow-61944.herokuapp.com//sessions/",
+            url: "https://drawsomethingserver.onrender.com//sessions/",
           },
         },
       });
@@ -50,7 +50,7 @@ exports.sessions_get_all = (req, res, next) => {
             _id: doc._id,
             request: {
               type: "GET",
-              url: "http://https://serene-meadow-61944.herokuapp.com//sessions/",
+              url: "https://drawsomethingserver.onrender.com//sessions/",
             },
           };
         }),
@@ -78,8 +78,7 @@ exports.session_edit = (req, res, next) => {
         score: id,
         request: {
           type: "PUT",
-          url:
-            "http://https://serene-meadow-61944.herokuapp.com//sessions/" + id,
+          url: "https://drawsomethingserver.onrender.com//sessions/" + id,
         },
       });
     })

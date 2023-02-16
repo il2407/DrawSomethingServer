@@ -27,7 +27,7 @@ exports.gameDatas_add_new_gameData = (req, res, next) => {
           score: result.score,
           request: {
             type: "POST",
-            url: "http://https://serene-meadow-61944.herokuapp.com/game-data/",
+            url: "https://drawsomethingserver.onrender.com/game-data/",
           },
         },
       });
@@ -58,7 +58,7 @@ exports.gameDatas_get_all = (req, res, next) => {
             _id: doc._id,
             request: {
               type: "GET",
-              url: "http://https://serene-meadow-61944.herokuapp.com/game-data/",
+              url: "https://drawsomethingserver.onrender.com/game-data/",
             },
           };
         }),
@@ -91,8 +91,7 @@ exports.gamedata_edit = (req, res, next) => {
         name: id,
         request: {
           type: "PUT",
-          url:
-            "http://https://serene-meadow-61944.herokuapp.com/game-data/" + id,
+          url: "https://drawsomethingserver.onrender.com/game-data/" + id,
         },
       });
     })
